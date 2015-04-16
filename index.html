@@ -139,45 +139,16 @@ We plan to extract course information from Olin, Babson and Wellesley college we
 <h4>
 <a id="preparation-and-framing" class="anchor" href="#preparation-and-framing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preparation and Framing</h4>
 
-<p>We hope that other groups know about what our project is about. Therefore, we plan to start the</p>
-
-<p>review by giving an overview on Olin Organizer. In addition, it would be easy for the audience to</p>
-
-<p>participate because this project could be a potential program in Olin. We want to find out what</p>
-
-<p>functions does students want from Olin organizer. There are too many functions that we can</p>
-
-<p>implement in a program so we need feedback to sieve out those that many will prefer. We will</p>
-
-<p>provide a agenda for the design review so our audience will know the flow of presentation. We</p>
-
-<p>also plan to get audience involved by allocating a time for them to give their comments.</p>
+<p>We hope that other groups know about what our project is about. Therefore, we plan to start the review by giving an overview on Olin Organizer. In addition, it would be easy for the audience to participate because this project could be a potential program in Olin. We want to find out what functions does students want from Olin organizer. There are too many functions that we can implement in a program so we need feedback to sieve out those that many will prefer. We will provide a agenda for the design review so our audience will know the flow of presentation. We also plan to get audience involved by allocating a time for them to give their comments.</p>
 
 <p>We will present our review as follow:</p>
 
 <ol>
-<li>Show a prototype of how the final product will look like – This will definitely give the audience</li>
+<li><p>Show a prototype of how the final product will look like – This will definitely give the audience an eye opener and what to expect of the end product</p></li>
+<li><p>Explain some of the features that we have in mind – This will definitely trigger the audience thoughts and we will receive feedback on additional features that could be useful</p></li>
+<li><p>Explain some intended and libraries that we plan to use – This will help us if some of the groups are using similar languages or libraries because we can discuss about problems that we faced</p></li>
+<li><p>Timeline – Explain some of the steps that we plan to take in order to make Olin Organizer a success</p></li>
 </ol>
-
-<p>an eye opener and what to expect of the end product</p>
-
-<ol>
-<li>Explain some of the features that we have in mind – This will definitely trigger the audience</li>
-</ol>
-
-<p>thoughts and we will receive feedback on additional features that could be useful</p>
-
-<ol>
-<li>Explain some intended and libraries that we plan to use – This will help us if some of the groups</li>
-</ol>
-
-<p>are using similar languages or libraries because we can discuss about problems that we faced</p>
-
-<ol>
-<li>Timeline – Explain some of the steps that we plan to take in order to make Olin Organizer a</li>
-</ol>
-
-<p>success</p>
 
 <h4>
 <a id="reflection-and-synthesis" class="anchor" href="#reflection-and-synthesis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection and Synthesis</h4>
@@ -221,7 +192,7 @@ So we are going to consider these ideas and decide our final design.</p>
 
 <p>From the feedbacks we have gotten, we’ve decided to change some of the decisions we have made prior to the technical review session. </p>
 
-<p>The new decisions we have arrived at are:</p>
+<p>The new decisions are:</p>
 
 <ol>
 <li><p>To make a python application instead of a website</p></li>
@@ -235,7 +206,7 @@ So we are going to consider these ideas and decide our final design.</p>
 
 <p>The review group gave us great insights to our project and their responses motivated us.</p>
 
-<p>Having a design of the website we were going to make helped in explaining the features and the uses. As the review group was the target users themselves, the feedback they gave us reflected what they really want (what features we should have) from the website. Also, they’ve pointed out that we might not have enough time to complete our proposed plan and should focus on the useful parts of the program.</p>
+<p>Having a design of the website we were going to make helped in explaining the features and making the other groups be on the same page as us. As the review group was the target users themselves, the feedback they gave us reflected what they would really want to see (what features we should have) from the website. Also, they’ve pointed out that we might not have enough time to complete our proposed plan and should focus on the useful parts of the program.</p>
 
 <p>We still have to look into the backend part of the project. All the the groups in our review group came with questions concerning the backend and no one could really answer. </p>
 
@@ -273,13 +244,23 @@ So we are going to consider these ideas and decide our final design.</p>
 
 <p><strong>June</strong></p>
 
-<p>Our first question was how we should implement the search function in CourseList(). Before code review, we planned to search course by looking through all the course list and find the proper courses that match up with certain condition. During the code review, most of audience agreed with our first suggestion so we decided to use this way to search courses.</p>
+<p>Our first question was how we should implement the search function in CourseList(). Before the code review, we planned to implement the search course function by looking through all the course list to find the courses that matched given conditions. During the code review, most of audience agreed with our first suggestion so we decided to go on with this decision.</p>
 
-<p>Our second question was about the way to interaction between two classes. In previous project, some of us implement the interaction between two classes by set one class as an attribute of the other class and access to the class by calling its attribute. However, this method is only valid for one-way. Since we have two parallel classes that have to interact each other, we need new way to implement it. Fortunately, Prof. Ben gave a great suggestion about this problem. His suggestion was implementing interaction in another class that can access both classes. So we decided to follow his suggestion.</p>
+<p>Our second question was about how two classes might interact both ways. In the previous project, some of us implement the interaction between two classes by setting one class as an attribute of the other class and access the class by calling its attribute. However, this method is only possible for one-way interaction. Since we have two classes that needs to have interaction with each other in parallel, we needed to find a new way to implement this. Fortunately, Prof. Ben gave a great suggestion about this problem. His suggestion was implementing interaction in another class that can access both classes. So we decided to follow his suggestion.</p>
 
-<p>At the first, we thought code review is the event? that could discuss our way tot implement code. So we wanted to discuss how we can implement some functions of our code like searching method and handling interaction between classes. However, we didn’t provide enough context to understand our code and also our code had not been implemented much. As a result, we didn’t have enough question to ask and failed to make audience to be in the same page with us.</p>
+<p>At first, we thought code review was a platform we could discuss our ways to implement code. Therefore, we wanted to discuss how we can implement some functions in our code such as searching method and handling interaction between classes. However, we didn’t provide enough context to the audience to be able to understand our code and our code had not been implemented much. As a result, we didn’t have enough question to ask and failed to make audience to be in the same page with us.</p>
 
 <p><strong>Jee Hyun</strong></p>
+
+<p>In general, the code review felt like a second design review. Some groups have gotten pretty far with coding. However, the review session was spent mostly on getting feedback on the design, function and layout we wanted to see more than how the code was being implemented currently and what were possible improvements that could be made to make it more efficient or professional. This might be due to the fact that going through the code is not an effective or engaging presentation method and the knowledge each group picks up doing our own project is not the same. Pre readings with questions and some background context of the questions might have led to a more useful code review session where we could discuss possible implementation plan in class. Also, UML diagram would have helped greatly when discussing the code. </p>
+
+<p>Learning points from the code review:</p>
+
+<ol>
+<li><p>Frame the problems we want too ask and breakdown into simple questions</p></li>
+<li><p>If the question needs background context, make sure to prepare a pre reading so that we can have constructive discussion in class</p></li>
+<li><p>Have a UML diagram</p></li>
+</ol>
 
 <h4>
 <a id="a-collaboration-by-kaist-nus--olin" class="anchor" href="#a-collaboration-by-kaist-nus--olin" aria-hidden="true"><span class="octicon octicon-link"></span></a>A collaboration by KAIST, NUS &amp; Olin</h4>

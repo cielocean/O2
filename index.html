@@ -20,7 +20,11 @@
 
     <section class="main-content">
       <h3>
-<a id="a-collaboration-by-kaist-nus--olin" class="anchor" href="#a-collaboration-by-kaist-nus--olin" aria-hidden="true"><span class="octicon octicon-link"></span></a>A collaboration by KAIST, NUS &amp; Olin</h3>
+<a id="project-description" class="anchor" href="#project-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Description</h3>
+
+<hr>
+
+<p>Olin Organizer (O2) is a timetable builder and course registration planner for Olin College students. It uses python and tkinter library.</p>
 
 <h2>
 <a id="the-big-idea" class="anchor" href="#the-big-idea" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Big Idea</h2>
@@ -128,7 +132,55 @@ We plan to extract course information from Olin, Babson and Wellesley college we
 <p>We have to learn web programming all on our own and look for graphical libraries</p>
 
 <h2>
-<a id="design-review-reflection" class="anchor" href="#design-review-reflection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Review Reflection</h2>
+<a id="design-review" class="anchor" href="#design-review" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Review</h2>
+
+<hr>
+
+<h4>
+<a id="preparation-and-framing" class="anchor" href="#preparation-and-framing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preparation and Framing</h4>
+
+<p>We hope that other groups know about what our project is about. Therefore, we plan to start the</p>
+
+<p>review by giving an overview on Olin Organizer. In addition, it would be easy for the audience to</p>
+
+<p>participate because this project could be a potential program in Olin. We want to find out what</p>
+
+<p>functions does students want from Olin organizer. There are too many functions that we can</p>
+
+<p>implement in a program so we need feedback to sieve out those that many will prefer. We will</p>
+
+<p>provide a agenda for the design review so our audience will know the flow of presentation. We</p>
+
+<p>also plan to get audience involved by allocating a time for them to give their comments.</p>
+
+<p>We will present our review as follow:</p>
+
+<ol>
+<li>Show a prototype of how the final product will look like – This will definitely give the audience</li>
+</ol>
+
+<p>an eye opener and what to expect of the end product</p>
+
+<ol>
+<li>Explain some of the features that we have in mind – This will definitely trigger the audience</li>
+</ol>
+
+<p>thoughts and we will receive feedback on additional features that could be useful</p>
+
+<ol>
+<li>Explain some intended and libraries that we plan to use – This will help us if some of the groups</li>
+</ol>
+
+<p>are using similar languages or libraries because we can discuss about problems that we faced</p>
+
+<ol>
+<li>Timeline – Explain some of the steps that we plan to take in order to make Olin Organizer a</li>
+</ol>
+
+<p>success</p>
+
+<h4>
+<a id="reflection-and-synthesis" class="anchor" href="#reflection-and-synthesis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection and Synthesis</h4>
 
 <p><strong>Shaun</strong></p>
 
@@ -190,6 +242,47 @@ So we are going to consider these ideas and decide our final design.</p>
 <p>To have a more effective technical review, we can have a UML diagram to explain our code.</p>
 
 <hr>
+
+<h2>
+<a id="code-review" class="anchor" href="#code-review" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Review</h2>
+
+<hr>
+
+<h4>
+<a id="preparation-and-framing-1" class="anchor" href="#preparation-and-framing-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preparation and Framing</h4>
+
+<p>We plan to tell the audience that we are changing from website to program and we are using Model­View­Controller (MVC) coding structure. We are also going to explain how Model, View and Controller classes are linking up. There are several structure that a group can use in order to implement a function. As we are using MVC structure, we want to get feedback from the audience as well as Professor Benjamin. It could be a piece of advice on using MVC structure or giving us another option that could be better.</p>
+
+<p>We will present our review as follow:</p>
+
+<ol>
+<li><p>Explain parts of our code – This will help audience understand how the program flows, we will also provide some graphical resources such as a prototype of GUI</p></li>
+<li><p>Give a brief description of code structure – We will explain some classes which are related to our key questions</p></li>
+<li><p>Release the key questions – Ensure the audience understands the reason of the key question as we will describe our current situation</p></li>
+<li><p>Receive feedback from audience – We will flash our code and ask for comments from the audience.</p></li>
+</ol>
+
+<h4>
+<a id="reflection-and-synthesis-1" class="anchor" href="#reflection-and-synthesis-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection and Synthesis</h4>
+
+<p><strong>Shaun</strong></p>
+
+<p>We feel that the code review is tougher to manage compared to design review because different groups are working on different libraries and functions in Python. We thought that it will be better if there is an actual code review (could be presented by Ninja or Professors) in class. In addition, different groups in a review section should send information about some libraries that they are using to other groups. This is to see if there is any coincidence between 2 groups who might be using the same type of library like Tkinter. However, one group should not overload other groups on information about the libraries that they are using because other groups might not have sufficient time to read on all the sources.</p>
+
+<p>I think that the code review helped our group to certain extend. We were worried about different classes communicating together at the same time with interaction with the user. We got some feedback from other groups about some methods that can be used to resolve the issue. </p>
+
+<p><strong>June</strong></p>
+
+<p>Our first question was how we should implement the search function in CourseList(). Before code review, we planned to search course by looking through all the course list and find the proper courses that match up with certain condition. During the code review, most of audience agreed with our first suggestion so we decided to use this way to search courses.</p>
+
+<p>Our second question was about the way to interaction between two classes. In previous project, some of us implement the interaction between two classes by set one class as an attribute of the other class and access to the class by calling its attribute. However, this method is only valid for one-way. Since we have two parallel classes that have to interact each other, we need new way to implement it. Fortunately, Prof. Ben gave a great suggestion about this problem. His suggestion was implementing interaction in another class that can access both classes. So we decided to follow his suggestion.</p>
+
+<p>At the first, we thought code review is the event? that could discuss our way tot implement code. So we wanted to discuss how we can implement some functions of our code like searching method and handling interaction between classes. However, we didn’t provide enough context to understand our code and also our code had not been implemented much. As a result, we didn’t have enough question to ask and failed to make audience to be in the same page with us.</p>
+
+<p><strong>Jee Hyun</strong></p>
+
+<h4>
+<a id="a-collaboration-by-kaist-nus--olin" class="anchor" href="#a-collaboration-by-kaist-nus--olin" aria-hidden="true"><span class="octicon octicon-link"></span></a>A collaboration by KAIST, NUS &amp; Olin</h4>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/cielocean/O2">O2</a> is maintained by <a href="https://github.com/cielocean">cielocean</a>.</span>

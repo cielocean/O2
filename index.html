@@ -26,8 +26,8 @@
 
 <p>Olin Organizer (O2) is a timetable builder and course registration planner for Olin College students. It uses python and tkinter library.</p>
 
-<h2>
-<a id="the-big-idea" class="anchor" href="#the-big-idea" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Big Idea</h2>
+<h3>
+<a id="the-big-idea" class="anchor" href="#the-big-idea" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Big Idea</h3>
 
 <hr>
 
@@ -69,8 +69,8 @@
 </li>
 </ul>
 
-<h2>
-<a id="implementation-plan" class="anchor" href="#implementation-plan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implementation Plan</h2>
+<h3>
+<a id="implementation-plan" class="anchor" href="#implementation-plan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implementation Plan</h3>
 
 <p>We will be using HTML5, CSS, JavaScript, Python.<br>
 Library we will be using: jQuery &amp; Flask<br>
@@ -126,13 +126,13 @@ We plan to extract course information from Olin, Babson and Wellesley college we
 <li>Pair programming will be done throughout the whole program so that every member will be keeping up at the same level.</li>
 </ul>
 
-<h2>
-<a id="risks" class="anchor" href="#risks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Risks</h2>
+<h3>
+<a id="risks" class="anchor" href="#risks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Risks</h3>
 
 <p>We have to learn web programming all on our own and look for graphical libraries</p>
 
-<h2>
-<a id="design-review" class="anchor" href="#design-review" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Review</h2>
+<h3>
+<a id="design-review" class="anchor" href="#design-review" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Review</h3>
 
 <hr>
 
@@ -141,13 +141,21 @@ We plan to extract course information from Olin, Babson and Wellesley college we
 
 <p>We hope that other groups know about what our project is about. Therefore, we plan to start the review by giving an overview on Olin Organizer. In addition, it would be easy for the audience to participate because this project could be a potential program in Olin. We want to find out what functions does students want from Olin organizer. There are too many functions that we can implement in a program so we need feedback to sieve out those that many will prefer. We will provide a agenda for the design review so our audience will know the flow of presentation. We also plan to get audience involved by allocating a time for them to give their comments.</p>
 
-<p>We will present our review as follow:</p>
+<p>Presentation Flow</p>
 
 <ol>
-<li><p>Show a prototype of how the final product will look like – This will definitely give the audience an eye opener and what to expect of the end product</p></li>
-<li><p>Explain some of the features that we have in mind – This will definitely trigger the audience thoughts and we will receive feedback on additional features that could be useful</p></li>
-<li><p>Explain some intended and libraries that we plan to use – This will help us if some of the groups are using similar languages or libraries because we can discuss about problems that we faced</p></li>
-<li><p>Timeline – Explain some of the steps that we plan to take in order to make Olin Organizer a success</p></li>
+<li>Overview of our project: Project Description</li>
+<li>Agenda of presentation</li>
+<li>First draft of our product GUI</li>
+<li>Features
+4.1. Explain features we are planning on implementing
+4.2. Explain how the features interact with one another
+4.3. Get feedback on the features they would like to see/ they do not require</li>
+<li>Libraries
+5.1. Libraries we are intending to use
+5.2. Feedback on additional libraries we could look into/ on the libraries we are going to use</li>
+<li>Timeline: Steps we are planning to take</li>
+<li>Open feedback session</li>
 </ol>
 
 <h4>
@@ -212,10 +220,8 @@ So we are going to consider these ideas and decide our final design.</p>
 
 <p>To have a more effective technical review, we can have a UML diagram to explain our code.</p>
 
-<hr>
-
-<h2>
-<a id="code-review" class="anchor" href="#code-review" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Review</h2>
+<h3>
+<a id="code-review" class="anchor" href="#code-review" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Review</h3>
 
 <hr>
 
@@ -244,7 +250,7 @@ So we are going to consider these ideas and decide our final design.</p>
 
 <p><strong>June</strong></p>
 
-<p>Our first question was how we should implement the search function in CourseList(). Before the code review, we planned to implement the search course function by looking through all the course list to find the courses that matched given conditions. During the code review, most of audience agreed with our first suggestion so we decided to go on with this decision.</p>
+<p>Our first question was about how we should implement the search function in CourseList(). Before the code review, we planned to implement the search course function by looking through the entire course list to find the courses that matched given conditions. During the code review, most of audience agreed with our suggestion and hence, we decided to go on with this decision.</p>
 
 <p>Our second question was about how two classes might interact both ways. In the previous project, some of us implement the interaction between two classes by setting one class as an attribute of the other class and access the class by calling its attribute. However, this method is only possible for one-way interaction. Since we have two classes that needs to have interaction with each other in parallel, we needed to find a new way to implement this. Fortunately, Prof. Ben gave a great suggestion about this problem. His suggestion was implementing interaction in another class that can access both classes. So we decided to follow his suggestion.</p>
 
@@ -257,7 +263,7 @@ So we are going to consider these ideas and decide our final design.</p>
 <p>Learning points from the code review:</p>
 
 <ol>
-<li><p>Frame the problems we want too ask and breakdown into simple questions</p></li>
+<li><p>Frame the problems we want to ask and breakdown into simple questions</p></li>
 <li><p>If the question needs background context, make sure to prepare a pre reading so that we can have constructive discussion in class</p></li>
 <li><p>Have a UML diagram</p></li>
 </ol>
